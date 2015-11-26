@@ -54,14 +54,16 @@
 }
 
 - (void)setupContentLoayout{
-//    self.contentCollectionView.
+//    self.contentCollectionView.scrollDir
     self.contentCollectionView.w = [UIScreen mainScreen].bounds.size.width;
     self.contentCollectionView.h = [UIScreen mainScreen].bounds.size.height - 64 - 44;
     //1.每个item的大小
     self.flowLayout.itemSize = self.contentCollectionView.bounds.size;
-    
+    //调整为水平滑动
+    self.flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.flowLayout.minimumLineSpacing = 0;
     self.flowLayout.minimumInteritemSpacing = 0;
+
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{

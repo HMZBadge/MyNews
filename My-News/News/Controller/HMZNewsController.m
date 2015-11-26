@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
+
 }
 
 - (void)setURLString:(NSString *)URLString{
@@ -75,44 +77,5 @@
     }
     return cellHeight;
 }
-
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    //1.取出模型进行判断
-//    HMZNews *news = self.newsList[indexPath.row];
-//    
-//    static NSString *identifier =nil;
-//    //根据模型来判断,显示的是哪种类型的cell
-//    if (news.imgType) {
-//        identifier= @"BigCell";
-//    }else if(news.imgextra.count==2){
-//        identifier= @"ImagesCell";
-//    }else{
-//        identifier= @"BaseCell";
-//    }
-//    
-//    HMZNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-//    
-//    cell.news = news;
-//    
-//    return cell;
-//}
-//
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    HMZNews *news = self.newsList[indexPath.row];
-//    
-//    CGFloat cellHeight = 0;
-//    //根据模型来判断,显示的是哪种类型的cell
-//    if (news.imgType) {
-//        cellHeight= 180;
-//    }else if(news.imgextra.count == 2){
-//        cellHeight= 120;
-//    }else{
-//        cellHeight= 80;
-//    }
-//    
-//    return cellHeight;
-//}
-
-
 
 @end
