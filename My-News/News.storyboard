@@ -13,9 +13,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="hwp-dP-5TN">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <animations/>
+                            <connections>
+                                <segue destination="Dfd-sl-D5i" kind="embed" id="lAO-Rn-15G"/>
+                            </connections>
+                        </containerView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BaseCell" rowHeight="80" id="1Rs-Aa-a05" customClass="HMZNewsCell">
-                                <rect key="frame" x="0.0" y="28" width="600" height="80"/>
+                                <rect key="frame" x="0.0" y="278" width="600" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Rs-Aa-a05" id="9Jv-Cj-hiw">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
@@ -73,7 +81,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BigCell" rowHeight="180" id="ZQL-T2-qcS" userLabel="BigCell" customClass="HMZNewsCell">
-                                <rect key="frame" x="0.0" y="108" width="600" height="180"/>
+                                <rect key="frame" x="0.0" y="358" width="600" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZQL-T2-qcS" id="k2T-iS-i00">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="179.5"/>
@@ -128,7 +136,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesCell" rowHeight="120" id="opE-fe-xC4" userLabel="ImagesCell" customClass="HMZNewsCell">
-                                <rect key="frame" x="0.0" y="288" width="600" height="120"/>
+                                <rect key="frame" x="0.0" y="538" width="600" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="opE-fe-xC4" id="IXs-me-Ega">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
@@ -197,10 +205,80 @@
                             <outlet property="delegate" destination="2DH-ln-d90" id="GI3-QU-CcK"/>
                         </connections>
                     </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dW-8W-aak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="271"/>
+            <point key="canvasLocation" x="57" y="-94"/>
+        </scene>
+        <!--Cycle Controller-->
+        <scene sceneID="u2Z-fq-3TT">
+            <objects>
+                <collectionViewController id="Dfd-sl-D5i" customClass="HMZCycleController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="FS5-Y2-869">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="l5o-mg-gh7">
+                            <size key="itemSize" width="600" height="250"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CycleCell" id="x8S-I7-FYx" customClass="HMZCycleCell">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SzN-JV-XNB">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="214"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFI-tc-dhB">
+                                            <rect key="frame" x="18" y="222" width="37.5" height="18"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZFI-tc-dhB" secondAttribute="bottom" constant="10" id="129-Oy-OWS"/>
+                                    <constraint firstItem="ZFI-tc-dhB" firstAttribute="leading" secondItem="x8S-I7-FYx" secondAttribute="leading" constant="18" id="Wrx-XM-27F"/>
+                                    <constraint firstItem="ZFI-tc-dhB" firstAttribute="top" secondItem="SzN-JV-XNB" secondAttribute="bottom" constant="8" id="iay-ju-B7d"/>
+                                    <constraint firstAttribute="trailing" secondItem="SzN-JV-XNB" secondAttribute="trailing" id="oVi-04-syH"/>
+                                    <constraint firstItem="SzN-JV-XNB" firstAttribute="leading" secondItem="x8S-I7-FYx" secondAttribute="leading" id="qN1-iN-QNq"/>
+                                    <constraint firstItem="SzN-JV-XNB" firstAttribute="top" secondItem="x8S-I7-FYx" secondAttribute="top" id="usQ-p6-r3B"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="iconView" destination="SzN-JV-XNB" id="3H2-tx-5Rg"/>
+                                    <outlet property="titleLabel" destination="ZFI-tc-dhB" id="z1b-kS-fQa"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Dfd-sl-D5i" id="jbQ-l1-agc"/>
+                            <outlet property="delegate" destination="Dfd-sl-D5i" id="oHN-bU-Sd5"/>
+                        </connections>
+                    </collectionView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="250"/>
+                    <connections>
+                        <outlet property="contentLayout" destination="l5o-mg-gh7" id="Tbr-nd-MNA"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEv-ha-0Br" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747" y="-269"/>
         </scene>
     </scenes>
 </document>

@@ -17,11 +17,6 @@
 
 @implementation HMZNewsController
 
-- (void)viewDidLoad{
-    [super viewDidLoad];
-    //self.view.backgroundColor = [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
-    
-}
 
 - (void)setURLString:(NSString *)URLString{
     _URLString = URLString;
@@ -39,7 +34,6 @@
     _newsList = newsList;
     [self.tableView reloadData];
 }
-
 
 
 #pragma mark - Table view data source
