@@ -10,5 +10,5 @@
 #import <AFNetworking.h>
 
 @interface HMZNetworkTool : AFHTTPSessionManager
-
++ (instancetype)shareNetworkTool;
 @end

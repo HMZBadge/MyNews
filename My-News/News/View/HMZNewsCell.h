@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HMZNews.h"
+@class HMZNews;
 
 @interface HMZNewsCell : UITableViewCell
 @property (nonatomic,strong) HMZNews *news;

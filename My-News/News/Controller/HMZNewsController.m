@@ -19,8 +19,8 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
-
+    //self.view.backgroundColor = [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
+    
 }
 
 - (void)setURLString:(NSString *)URLString{
@@ -56,12 +56,13 @@
     }
     else if (news.imgextra.count == 2) {//是否是多张图
         identifier = @"ImagesCell";
-    }else{
+    }
+    else{
         identifier = @"BaseCell";
     }
-//    HMZNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-//    cell.news = news;
-    return nil;
+    HMZNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    cell.news = news;
+    return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
