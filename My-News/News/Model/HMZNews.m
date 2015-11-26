@@ -64,6 +64,7 @@
     //1.拿着我们的URLString,通过我们的NetWorkTool,去请求数据
     [[HMZNetworkTool shareNetworkTool] GET:URLString parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         if (responseObject) {
+            //NSLog(@"%@",responseObject);
             NSDictionary *dictData = responseObject;
             NSEnumerator *enumerator = dictData.objectEnumerator;
             NSArray *array = enumerator.nextObject;//取出字典中的下一个数据,由于只有一个,就是他了

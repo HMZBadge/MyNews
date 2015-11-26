@@ -29,7 +29,7 @@
     //设置我们的内容
     self.digestLabel.text = news.digest;
     //回帖数
-    self.replyCountLabel.text = [NSString stringWithFormat:@"%d",news.replyCount];
+    self.replyCountLabel.text = [NSString stringWithFormat:@"%d跟帖",news.replyCount];
     
     //判断多张图的情况,给我们的多图的cell设置我们的配置,主要是设置,第2张和第3张
     if (news.imgextra.count ==2 ) {//多图的cell

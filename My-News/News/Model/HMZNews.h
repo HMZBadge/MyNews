@@ -23,6 +23,9 @@ typedef  void (^FinishBlock)(NSMutableArray *newsList);
 // 大图标记
 @property (nonatomic, assign) BOOL imgType;
 
+//文章详细信息
+@property (nonatomic,copy) NSString *url;
+
 - (instancetype)initWithDict:(NSDictionary *)dict;
 
 + (instancetype)newsWithDict:(NSDictionary *)dict;

@@ -9,10 +9,11 @@
 #import "HMZNewsController.h"
 #import "HMZNews.h"
 #import "HMZNewsCell.h"
+#import "HMZNewsInfoController.h"
 
 @interface HMZNewsController ()
-
 @property (nonatomic,strong) NSMutableArray *newsList;
+@property (nonatomic,strong) UINavigationController *nav;
 @end
 
 @implementation HMZNewsController
@@ -28,6 +29,8 @@
     [HMZNews newsListWithURLString:self.URLString  finishBlock:^(NSMutableArray *newsList) {
         weakSelf.newsList = newsList;
     }];
+    
+    
 }
 
 - (void)setNewsList:(NSMutableArray *)newsList{
@@ -59,6 +62,7 @@
     return cell;
 }
 
+#pragma mark - Table view delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     HMZNews *news = self.newsList[indexPath.row];
     CGFloat cellHeight = 0;
@@ -72,5 +76,17 @@
     }
     return cellHeight;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    HMZNews *news = self.newsList[indexPath.row];
+    HMZNewsInfoController *newsInfoVc = [[HMZNewsInfoController alloc] init];
+    newsInfoVc.newsInfoURL = news.url;
+
+//    self.nav = [[UINavigationController alloc] initWithRootViewController:self];
+//    [self.nav pushViewController:newsInfoVc animated:YES];
+    [self presentViewController:newsInfoVc animated:YES completion:nil];
+}
+
 
 @end

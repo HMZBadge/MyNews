@@ -166,11 +166,6 @@
 }
 
 
-
-
-
-
-
 #pragma mark -UICollectionView数据源代理方法
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
