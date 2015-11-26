@@ -8,8 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		08162C91E2FDC9F346819FCE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCEBD2A462155711D79826 /* libPods.a */; };
-		DA400F2F1C06E139007C1E71 /* HMHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA400F2E1C06E139007C1E71 /* HMHomeController.m */; };
-		DA400F321C06E183007C1E71 /* HMZChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA400F311C06E183007C1E71 /* HMZChannel.m */; };
+		DA8B145F1C06E3A400FAEA51 /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = DA8B145E1C06E3A400FAEA51 /* topic_news.json */; settings = {ASSET_TAGS = (); }; };
+		DA8B14621C06E3C800FAEA51 /* HMZChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B14611C06E3C800FAEA51 /* HMZChannelLabel.m */; settings = {ASSET_TAGS = (); }; };
+		DA8B14651C06E3EC00FAEA51 /* HMZChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B14641C06E3EC00FAEA51 /* HMZChannel.m */; settings = {ASSET_TAGS = (); }; };
+		DA8B14681C06E48900FAEA51 /* HMZHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B14671C06E48900FAEA51 /* HMZHomeController.m */; settings = {ASSET_TAGS = (); }; };
+		DA8B146B1C06E4A700FAEA51 /* HMZContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B146A1C06E4A700FAEA51 /* HMZContentCell.m */; settings = {ASSET_TAGS = (); }; };
+		DA8B14711C06E4F000FAEA51 /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B146E1C06E4F000FAEA51 /* NSString+Tools.m */; settings = {ASSET_TAGS = (); }; };
+		DA8B14721C06E4F000FAEA51 /* UIView+HMZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B14701C06E4F000FAEA51 /* UIView+HMZFrame.m */; settings = {ASSET_TAGS = (); }; };
+		DA8B14751C06E50E00FAEA51 /* HMZNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B14741C06E50E00FAEA51 /* HMZNewsController.m */; settings = {ASSET_TAGS = (); }; };
+		DA8B14781C06E56200FAEA51 /* HMZNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B14771C06E56200FAEA51 /* HMZNewsCell.m */; settings = {ASSET_TAGS = (); }; };
+		DA8B147B1C06E58100FAEA51 /* HMZNews.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B147A1C06E58100FAEA51 /* HMZNews.m */; settings = {ASSET_TAGS = (); }; };
+		DA8B14821C06E71400FAEA51 /* HMZNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B14811C06E71400FAEA51 /* HMZNetworkTool.m */; settings = {ASSET_TAGS = (); }; };
+		DA8B14841C06E96B00FAEA51 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B14831C06E96B00FAEA51 /* News.storyboard */; settings = {ASSET_TAGS = (); }; };
 		DAC3301E1C06D4E30012CBF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC3301D1C06D4E30012CBF2 /* main.m */; };
 		DAC330211C06D4E30012CBF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC330201C06D4E30012CBF2 /* AppDelegate.m */; };
 		DAC330271C06D4E30012CBF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC330251C06D4E30012CBF2 /* Main.storyboard */; };
@@ -19,10 +29,28 @@
 
 /* Begin PBXFileReference section */
 		37CCEBD2A462155711D79826 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA400F2D1C06E139007C1E71 /* HMHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMHomeController.h; sourceTree = "<group>"; };
-		DA400F2E1C06E139007C1E71 /* HMHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMHomeController.m; sourceTree = "<group>"; };
-		DA400F301C06E183007C1E71 /* HMZChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMZChannel.h; sourceTree = "<group>"; };
-		DA400F311C06E183007C1E71 /* HMZChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMZChannel.m; sourceTree = "<group>"; };
+		DA8B145E1C06E3A400FAEA51 /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		DA8B14601C06E3C700FAEA51 /* HMZChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMZChannelLabel.h; sourceTree = "<group>"; };
+		DA8B14611C06E3C800FAEA51 /* HMZChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMZChannelLabel.m; sourceTree = "<group>"; };
+		DA8B14631C06E3EC00FAEA51 /* HMZChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMZChannel.h; sourceTree = "<group>"; };
+		DA8B14641C06E3EC00FAEA51 /* HMZChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMZChannel.m; sourceTree = "<group>"; };
+		DA8B14661C06E48900FAEA51 /* HMZHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMZHomeController.h; sourceTree = "<group>"; };
+		DA8B14671C06E48900FAEA51 /* HMZHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMZHomeController.m; sourceTree = "<group>"; };
+		DA8B14691C06E4A700FAEA51 /* HMZContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMZContentCell.h; sourceTree = "<group>"; };
+		DA8B146A1C06E4A700FAEA51 /* HMZContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMZContentCell.m; sourceTree = "<group>"; };
+		DA8B146D1C06E4F000FAEA51 /* NSString+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
+		DA8B146E1C06E4F000FAEA51 /* NSString+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
+		DA8B146F1C06E4F000FAEA51 /* UIView+HMZFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HMZFrame.h"; sourceTree = "<group>"; };
+		DA8B14701C06E4F000FAEA51 /* UIView+HMZFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HMZFrame.m"; sourceTree = "<group>"; };
+		DA8B14731C06E50E00FAEA51 /* HMZNewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMZNewsController.h; sourceTree = "<group>"; };
+		DA8B14741C06E50E00FAEA51 /* HMZNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMZNewsController.m; sourceTree = "<group>"; };
+		DA8B14761C06E56200FAEA51 /* HMZNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMZNewsCell.h; sourceTree = "<group>"; };
+		DA8B14771C06E56200FAEA51 /* HMZNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMZNewsCell.m; sourceTree = "<group>"; };
+		DA8B14791C06E58100FAEA51 /* HMZNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMZNews.h; sourceTree = "<group>"; };
+		DA8B147A1C06E58100FAEA51 /* HMZNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMZNews.m; sourceTree = "<group>"; };
+		DA8B14801C06E71400FAEA51 /* HMZNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMZNetworkTool.h; sourceTree = "<group>"; };
+		DA8B14811C06E71400FAEA51 /* HMZNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMZNetworkTool.m; sourceTree = "<group>"; };
+		DA8B14831C06E96B00FAEA51 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		DAC330191C06D4E30012CBF2 /* My-News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My-News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC3301D1C06D4E30012CBF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAC3301F1C06D4E30012CBF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,8 +105,8 @@
 		DA400F161C06DE74007C1E71 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DA400F301C06E183007C1E71 /* HMZChannel.h */,
-				DA400F311C06E183007C1E71 /* HMZChannel.m */,
+				DA8B14631C06E3EC00FAEA51 /* HMZChannel.h */,
+				DA8B14641C06E3EC00FAEA51 /* HMZChannel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -86,6 +114,7 @@
 		DA400F171C06DE74007C1E71 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				DA8B145E1C06E3A400FAEA51 /* topic_news.json */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -93,6 +122,8 @@
 		DA400F181C06DE74007C1E71 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA8B14601C06E3C700FAEA51 /* HMZChannelLabel.h */,
+				DA8B14611C06E3C800FAEA51 /* HMZChannelLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,8 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				DA400F241C06DE74007C1E71 /* Controller */,
-				DA400F251C06DE74007C1E71 /* Model */,
-				DA400F261C06DE74007C1E71 /* Other */,
 				DA400F271C06DE74007C1E71 /* View */,
 			);
 			path = Home;
@@ -189,29 +218,17 @@
 		DA400F241C06DE74007C1E71 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DA400F2D1C06E139007C1E71 /* HMHomeController.h */,
-				DA400F2E1C06E139007C1E71 /* HMHomeController.m */,
+				DA8B14661C06E48900FAEA51 /* HMZHomeController.h */,
+				DA8B14671C06E48900FAEA51 /* HMZHomeController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		DA400F251C06DE74007C1E71 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DA400F261C06DE74007C1E71 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		DA400F271C06DE74007C1E71 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA8B14691C06E4A700FAEA51 /* HMZContentCell.h */,
+				DA8B146A1C06E4A700FAEA51 /* HMZContentCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,6 +247,8 @@
 		DA400F291C06DE74007C1E71 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DA8B14731C06E50E00FAEA51 /* HMZNewsController.h */,
+				DA8B14741C06E50E00FAEA51 /* HMZNewsController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +256,8 @@
 		DA400F2A1C06DE74007C1E71 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA8B14791C06E58100FAEA51 /* HMZNews.h */,
+				DA8B147A1C06E58100FAEA51 /* HMZNews.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,8 +272,30 @@
 		DA400F2C1C06DE74007C1E71 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA8B14761C06E56200FAEA51 /* HMZNewsCell.h */,
+				DA8B14771C06E56200FAEA51 /* HMZNewsCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DA8B146C1C06E4D000FAEA51 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DA8B146D1C06E4F000FAEA51 /* NSString+Tools.h */,
+				DA8B146E1C06E4F000FAEA51 /* NSString+Tools.m */,
+				DA8B146F1C06E4F000FAEA51 /* UIView+HMZFrame.h */,
+				DA8B14701C06E4F000FAEA51 /* UIView+HMZFrame.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		DA8B147C1C06E63C00FAEA51 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DA8B14801C06E71400FAEA51 /* HMZNetworkTool.h */,
+				DA8B14811C06E71400FAEA51 /* HMZNetworkTool.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		DAC330101C06D4E30012CBF2 = {
@@ -276,6 +319,8 @@
 		DAC3301B1C06D4E30012CBF2 /* My-News */ = {
 			isa = PBXGroup;
 			children = (
+				DA8B147C1C06E63C00FAEA51 /* Tools */,
+				DA8B146C1C06E4D000FAEA51 /* Lib */,
 				DA400F141C06DE74007C1E71 /* Channel */,
 				DA400F191C06DE74007C1E71 /* Classes */,
 				DA400F1E1C06DE74007C1E71 /* Cycle */,
@@ -284,6 +329,7 @@
 				DAC3301F1C06D4E30012CBF2 /* AppDelegate.h */,
 				DAC330201C06D4E30012CBF2 /* AppDelegate.m */,
 				DAC330251C06D4E30012CBF2 /* Main.storyboard */,
+				DA8B14831C06E96B00FAEA51 /* News.storyboard */,
 				DAC330281C06D4E30012CBF2 /* Assets.xcassets */,
 				DAC3302A1C06D4E30012CBF2 /* LaunchScreen.storyboard */,
 				DAC3302D1C06D4E30012CBF2 /* Info.plist */,
@@ -364,6 +410,8 @@
 			files = (
 				DAC3302C1C06D4E30012CBF2 /* LaunchScreen.storyboard in Resources */,
 				DAC330291C06D4E30012CBF2 /* Assets.xcassets in Resources */,
+				DA8B14841C06E96B00FAEA51 /* News.storyboard in Resources */,
+				DA8B145F1C06E3A400FAEA51 /* topic_news.json in Resources */,
 				DAC330271C06D4E30012CBF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,10 +471,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8B147B1C06E58100FAEA51 /* HMZNews.m in Sources */,
 				DAC330211C06D4E30012CBF2 /* AppDelegate.m in Sources */,
-				DA400F2F1C06E139007C1E71 /* HMHomeController.m in Sources */,
+				DA8B146B1C06E4A700FAEA51 /* HMZContentCell.m in Sources */,
+				DA8B14751C06E50E00FAEA51 /* HMZNewsController.m in Sources */,
+				DA8B14721C06E4F000FAEA51 /* UIView+HMZFrame.m in Sources */,
+				DA8B14621C06E3C800FAEA51 /* HMZChannelLabel.m in Sources */,
 				DAC3301E1C06D4E30012CBF2 /* main.m in Sources */,
-				DA400F321C06E183007C1E71 /* HMZChannel.m in Sources */,
+				DA8B14711C06E4F000FAEA51 /* NSString+Tools.m in Sources */,
+				DA8B14681C06E48900FAEA51 /* HMZHomeController.m in Sources */,
+				DA8B14781C06E56200FAEA51 /* HMZNewsCell.m in Sources */,
+				DA8B14821C06E71400FAEA51 /* HMZNetworkTool.m in Sources */,
+				DA8B14651C06E3EC00FAEA51 /* HMZChannel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
