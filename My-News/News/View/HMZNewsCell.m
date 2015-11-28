@@ -22,6 +22,7 @@
 
 - (void)setNews:(HMZNews *)news{
     _news = news;
+    self.iconView.image = nil;//先清空一下,防止cell重用时图片用了上一张的
     //首先设置我们的iconView的值
     [self.iconView setImageWithURL:[NSURL URLWithString:news.imgsrc]];
     //设置标题

@@ -10,14 +10,20 @@
 #import "HMZNews.h"
 #import "HMZNewsCell.h"
 #import "HMZNewsInfoController.h"
+#import "UIView+HMZFrame.h"
 
 @interface HMZNewsController ()
 @property (nonatomic,strong) NSMutableArray *newsList;
 @property (nonatomic,strong) UINavigationController *nav;
+@property (weak, nonatomic) IBOutlet UIView *headContainerView;
 @end
 
 @implementation HMZNewsController
 
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    self.headContainerView.w = [UIScreen mainScreen].bounds.size.width;
+}
 
 - (void)setURLString:(NSString *)URLString{
     _URLString = URLString;
@@ -36,6 +42,7 @@
 - (void)setNewsList:(NSMutableArray *)newsList{
     _newsList = newsList;
     [self.tableView reloadData];
+    //    [[UILayoutContainerView alloc] init];
 }
 
 
@@ -78,13 +85,19 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    NSLog(@"%s",__func__);
     HMZNews *news = self.newsList[indexPath.row];
     HMZNewsInfoController *newsInfoVc = [[HMZNewsInfoController alloc] init];
     newsInfoVc.newsInfoURL = news.url;
-
-//    self.nav = [[UINavigationController alloc] initWithRootViewController:self];
-//    [self.nav pushViewController:newsInfoVc animated:YES];
+    //UIWindow  *window = [UIApplication sharedApplication].keyWindow;
+    //self.nav = [[UINavigationController alloc] init];
+    //window.rootViewController = self.nav;
+    //[self.nav pushViewController:newsInfoVc animated:YES];
+    //NSLog(@"%@",self.nav);
+    //    [self.nav pushViewController:newsInfoVc animated:YES];
+    //    [self.navigationController pushViewController:newsInfoVc animated:YES];
+    //怎样设置modal 的样式..
+    [self setModalPresentationStyle:UIModalPresentationPageSheet];
     [self presentViewController:newsInfoVc animated:YES completion:nil];
 }
 

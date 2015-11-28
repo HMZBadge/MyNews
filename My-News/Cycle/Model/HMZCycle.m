@@ -55,7 +55,6 @@
 }
 
 + (void)cycleWithFinishBlock:(FinishBlock)finishBlock{
-    
     [[HMZNetworkTool shareNetworkTool] GET:@"ad/headline/0-4.html" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         if (responseObject) {
             NSDictionary *dictData = responseObject;
@@ -73,8 +72,6 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error);
     }];
-    
-   
 }
 
 - (NSString *)description
