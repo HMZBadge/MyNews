@@ -93,7 +93,8 @@
     
     HMZNewsInfoController *newsInfoVc = [[HMZNewsInfoController alloc] init];
     newsInfoVc.newsInfoURL = news.url;
-    ç
+    UIWindow  *window = [UIApplication sharedApplication].keyWindow;
+    UINavigationController *nav = (UINavigationController *)window.rootViewController;
     [nav pushViewController:newsInfoVc animated:YES];
     //self.nav = [[UINavigationController alloc] init];
     //window.rootViewController = self.nav;
