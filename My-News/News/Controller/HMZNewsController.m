@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.headContainerView.w = [UIScreen mainScreen].bounds.size.width;
+   // self.headContainerView.w = [UIScreen mainScreen].bounds.size.width;
 }
 
 - (void)setURLString:(NSString *)URLString{
@@ -85,7 +85,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%s",__func__);
+    //NSLog(@"%s",__func__);
     HMZNews *news = self.newsList[indexPath.row];
     
 //    UIStoryboard *story = [UIStoryboard storyboardWithName:@"News" bundle:nil];
@@ -105,13 +105,7 @@
     //怎样设置modal 的样式..
 //    [self setModalPresentationStyle:UIModalPresentationPageSheet];
 //    [self presentViewController:newsInfoVc animated:YES completion:nil];
-    
-    
-    
-   
      //[self performSegueWithIdentifier:@"newsToInfo" sender:nil];
-
-   
 }
 
 
