@@ -88,24 +88,12 @@
     //NSLog(@"%s",__func__);
     HMZNews *news = self.newsList[indexPath.row];
     
-//    UIStoryboard *story = [UIStoryboard storyboardWithName:@"News" bundle:nil];
-//    HMZNewsInfoController *newsInfoVc =[story instantiateViewControllerWithIdentifier:@"NewsInfo"];
-    
     HMZNewsInfoController *newsInfoVc = [[HMZNewsInfoController alloc] init];
+    newsInfoVc.title = news.title;
     newsInfoVc.newsInfoURL = news.url;
     UIWindow  *window = [UIApplication sharedApplication].keyWindow;
     UINavigationController *nav = (UINavigationController *)window.rootViewController;
     [nav pushViewController:newsInfoVc animated:YES];
-    //self.nav = [[UINavigationController alloc] init];
-    //window.rootViewController = self.nav;
-    //[self.nav pushViewController:newsInfoVc animated:YES];
-    //NSLog(@"%@",self.nav);
-    //    [self.nav pushViewController:newsInfoVc animated:YES];
-    //    [self.navigationController pushViewController:newsInfoVc animated:YES];
-    //怎样设置modal 的样式..
-//    [self setModalPresentationStyle:UIModalPresentationPageSheet];
-//    [self presentViewController:newsInfoVc animated:YES completion:nil];
-     //[self performSegueWithIdentifier:@"newsToInfo" sender:nil];
 }
 
 
